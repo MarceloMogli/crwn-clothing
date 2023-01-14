@@ -20,12 +20,12 @@
       height: 300px;
       display: flex;
       flex-direction: column;
-      overflow: scroll;
+      overflow-x: hidden;
     }
   
     button {
       margin-top: auto;
       width:auto;
-      font-size: 90%;
+      font-size: 85%;
     }
   }
