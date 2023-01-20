@@ -74,7 +74,7 @@ const SignInForm = () => {
           onChange={handleChange}
           name="password"
           value={password}
-          autoComplete="new-password"
+          autoComplete="password"
         />
         <div className="buttons-container">
           <Button type="submit">Sign In</Button>
