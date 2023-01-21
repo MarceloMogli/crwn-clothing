@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
-import './sign-up-form.styles.scss';
+import { SignUpContainer } from "./sign-up-form.styles.jsx";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
@@ -17,7 +17,6 @@ const defaultformFields = {
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultformFields);
   const { displayName, email, password, confirmPassword } = formFields;
-
 
   const resetFormFields = () => {
     setFormFields(defaultformFields);
@@ -54,8 +53,8 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
-    <h2>Don't have an account?</h2>
+    <SignUpContainer>
+      <h2>Don't have an account?</h2>
       <span>Sign up with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -96,7 +95,7 @@ const SignUpForm = () => {
         />
         <Button type="submit">Sign Up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 export default SignUpForm;
