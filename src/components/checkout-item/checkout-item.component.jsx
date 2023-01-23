@@ -21,12 +21,12 @@ const CheckOutItem = ({ cartItem }) => {
         <Arrow onClick={removeItemHandler}>
           &#10094;
         </Arrow>
-        <Value className="value">{quantity}</Value>
+        <Value>{quantity}</Value>
         <Arrow onClick={addItemHandler}>
           &#10095;
         </Arrow>
       </Quantity>
-      <BaseSpan className="price">${price}</BaseSpan>
+      <BaseSpan>${price}</BaseSpan>
       <RemoveButton onClick={clearItemHandler}>
         &#10005;
       </RemoveButton>
