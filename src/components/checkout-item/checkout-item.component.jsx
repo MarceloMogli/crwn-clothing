@@ -18,11 +18,11 @@ const CheckOutItem = ({ cartItem }) => {
       </ImageContainer>
       <BaseSpan className="name">{prod}</BaseSpan>
       <Quantity>
-        <div className="arrow" onClick={removeItemHandler}>
+        <Arrow onClick={removeItemHandler}>
           &#10094;
-        </div>
+        </Arrow>
         <Value className="value">{quantity}</Value>
-        <Arrow className="arrow" onClick={addItemHandler}>
+        <Arrow onClick={addItemHandler}>
           &#10095;
         </Arrow>
       </Quantity>
