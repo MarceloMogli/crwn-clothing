@@ -1,6 +1,7 @@
 import {Preview, PreviewContainer} from "./category-preview.styles";
 import ProductCard from "../product-card/product-card.component";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const CategoryPreview = ({ title, products }) => {
   return (

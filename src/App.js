@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Authentication from "./routes/authentication/authentication.component";
 import CheckOut from "./routes/checkout/checkout.component";
