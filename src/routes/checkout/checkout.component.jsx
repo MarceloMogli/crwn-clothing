@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/cart.context";
 import CheckOutItem from "../../components/checkout-item/checkout-item.component";
+import PaymentForm from "../../components/payment-form/payment-form.component";
 import {
   CheckOutContainer,
   CheckOutHeader,
@@ -33,6 +34,7 @@ const CheckOut = () => {
         return <CheckOutItem key={cartItem.id} cartItem={cartItem} />;
       })}
       <Total>Total: ${cartTotal}</Total>
+      <PaymentForm />
     </CheckOutContainer>
   );
 };
