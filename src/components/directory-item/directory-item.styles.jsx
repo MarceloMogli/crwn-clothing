@@ -31,6 +31,19 @@ export const Body = styled.div`
     font-weight: lighter;
     font-size: 16px;
   }
+  @media screen and (max-width: 650px) {
+    height: 80px;
+    width: 120px;
+    opacity: 0.7;
+    h2 {
+      margin: 0 6px 0;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
